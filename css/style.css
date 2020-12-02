@@ -1,3 +1,54 @@
-body{
-  background-color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+}
+
+/* main */
+main{
+  height: calc(100% - 90px);
+  display: flex;
+}
+
+/* left content */
+#playlist{
+  width: 230px;
+  height: 100%;
+  background-color: green;
+}
+/* /left content */
+
+/* central content */
+#main_content{
+  width: calc(100% - 230px);
+  height: 100%;
+  background-color: purple;
+}
+
+#main_content .call_to_action{
+  width: calc(100% - 230px);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: pink;
+}
+/* /central content */
+/* /main */
+
+/* footer */
+footer{
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+}
+/* /footer */
