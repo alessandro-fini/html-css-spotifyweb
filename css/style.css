@@ -1,7 +1,17 @@
+/* commons */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+/* /commons */
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -47,7 +57,7 @@ main{
   width: calc(100% - 230px);
   height: 100%;
   padding-top: 100px;
-  background-color: purple;
+  background-color: #141922;
   overflow: auto;
 }
 
@@ -58,7 +68,22 @@ main{
   top: 0;
   right: 0;
   z-index: 1;
-  background-color: pink;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.call_to_action a{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 2%;
+  padding: 10px 40px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 #main_content .text{
