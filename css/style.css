@@ -7,7 +7,6 @@
 .container{
   width: 100%;
   height: 100vh;
-  background-color: orange;
 }
 
 /* main */
@@ -20,7 +19,26 @@ main{
 #playlist{
   width: 230px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: green;
+}
+
+#playlist .playlist_top{
+  background-color: red;
+}
+
+#playlist .playlist_item{
+  min-height: 220px;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: orange;
+}
+
+#playlist .account{
+  height: 90px;
+  background-color: gray;
 }
 /* /left content */
 
@@ -28,7 +46,9 @@ main{
 #main_content{
   width: calc(100% - 230px);
   height: 100%;
+  padding-top: 100px;
   background-color: purple;
+  overflow: auto;
 }
 
 #main_content .call_to_action{
@@ -37,7 +57,12 @@ main{
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   background-color: pink;
+}
+
+#main_content .text{
+  font-size: 30px;
 }
 /* /central content */
 /* /main */
