@@ -32,12 +32,38 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: green;
+  background-color: black;
 }
 
-#playlist .playlist_top{
-  background-color: red;
+/* logo >>> playlist */
+.playlist_top .logo img{
+  width: 130px;
+  margin: 20px 20px;
 }
+
+.playlist_top .home{
+  border-left: 2px solid #adff2f;
+}
+
+.playlist_top .home img,
+.playlist_top .search img{
+  height: 25px;
+  vertical-align: middle;
+  margin: 0 5px 10px 20px;
+}
+
+.playlist_top .home a{
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.playlist_top .search a{
+  color: #484848;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* /logo >>> playlist */
 
 #playlist .playlist_item{
   min-height: 220px;
@@ -71,6 +97,7 @@ main{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* button */
 .call_to_action a{
   position: absolute;
   top: 50%;
@@ -85,6 +112,7 @@ main{
   font-size: 13px;
   font-weight: bold;
 }
+/* /button */
 
 #main_content .text{
   font-size: 30px;
