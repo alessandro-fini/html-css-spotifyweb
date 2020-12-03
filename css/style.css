@@ -219,7 +219,7 @@ main{
 #main_content{
   width: calc(100% - 230px);
   height: 100%;
-  padding-top: 100px;
+  padding-top: 120px;
   background-color: #141922;
   overflow: auto;
 }
@@ -250,9 +250,28 @@ main{
   font-weight: bold;
 }
 /* /button */
+#main_content .main_top{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-#main_content .text{
-  font-size: 30px;
+#main_content .main_top a{
+  color: #7b7e82;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#main_content .main_top [class*="top_"]{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.main_top .top_play .border{
+  width: 40%;
+  border-bottom: 2px solid #adff2f;
+  margin-left: 30%
 }
 /* /central content */
 /* /main */
