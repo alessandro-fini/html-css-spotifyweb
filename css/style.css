@@ -45,8 +45,7 @@ main{
   border-left: 2px solid #adff2f;
 }
 
-.playlist_top .home img,
-.playlist_top .search img{
+.playlist_top .home img{
   height: 25px;
   vertical-align: middle;
   margin: 0 5px 10px 20px;
@@ -58,23 +57,161 @@ main{
   font-weight: bold;
 }
 
-.playlist_top .search a{
+.playlist_top .search img,
+.playlist_top .library img{
+  height: 25px;
+  vertical-align: middle;
+  margin: 0 5px 10px 22px;
+  color: #484848;
+}
+
+.playlist_top .search a,
+.playlist_top .library a{
   color: #484848;
   font-size: 13px;
   font-weight: bold;
 }
-/* /logo >>> playlist */
 
-#playlist .playlist_item{
-  min-height: 220px;
-  flex-grow: 1;
-  overflow: auto;
-  background-color: orange;
+.playlist_top .add_playlist h4{
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  margin: 20px 0 10px 22px;
 }
 
-#playlist .account{
-  height: 90px;
-  background-color: gray;
+/* plus box */
+.playlist_top .add_playlist .new_playlist{
+  display: flex;
+  align-items: center;
+}
+
+.add_playlist .new_playlist .add_box{
+  width: 40px;
+  height: 40px;
+  margin-left: 22px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a3a3a3;
+}
+
+.new_playlist .add_box i{
+  font-size: 20px;
+}
+
+.add_playlist .new_playlist span a{
+  color: #484848;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* /plus box */
+/* /logo >>> playlist */
+
+/* list */
+#playlist .playlist_item{
+  min-height: 180px;
+  flex-grow: 1;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.playlist_item li{
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.playlist_item li a{
+  color: #484848;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* /list */
+
+/* bottom left */
+#playlist .account .app{
+  margin: 0 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #484848;
+}
+
+#playlist .account .app i{
+  margin-right: 10px;
+  color: #484848;
+  font-size: 13px;
+}
+
+#playlist .account .app a{
+  color: #484848;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#playlist .account .user{
+  margin: 10px 0 10px 22px;
+}
+
+#playlist .account .user a{
+  color: white;
+  background-color: #484848;
+  border-radius: 50%;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+#playlist .account .user span{
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 5px;
+}
+/* /bottom left */
+
+@media screen and (max-width: 578px) {
+  main #playlist{
+    width: 60px;
+  }
+
+  #playlist a{
+    display: none;
+  }
+
+  .playlist_top .logo img{
+    margin-left: 15px;
+  }
+
+  .playlist_top .home{
+    border: none;
+  }
+
+  #playlist .add_playlist{
+    display: none;
+  }
+
+  #playlist .account .user{
+    margin-left: 18px;
+  }
+
+  #playlist .account .user a{
+    display: block;
+    background-color: black;
+  }
+
+  #playlist .account .app{
+    border: none;
+  }
+
+  #playlist .account .user span{
+    display: none;
+  }
+
+  main #main_content{
+    width: calc(100% - 60px);
+  }
+
+  main #main_content .call_to_action{
+    width: calc(100% - 60px);
+  }
 }
 /* /left content */
 
