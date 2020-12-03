@@ -339,6 +339,26 @@ main{
   font-size: 15px;
 }
 /* third row */
+@media screen and (max-width: 992px) {
+  #main_content .box_img_container{
+    flex-wrap: wrap;
+  }
+
+  #main_content .box_img_top,
+  #main_content .box_img_round{
+    width: calc(100% / 2 - 10px)
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #main_content .box_img_container{
+    flex-wrap: wrap;
+  }
+
+  #main_content .box_img_top,
+  #main_content .box_img_round{
+    width: calc(100% / 4 - 10px)
+}
 /* /central content */
 /* /main */
 
