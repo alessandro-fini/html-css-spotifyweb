@@ -326,12 +326,12 @@ main{
   color: white;
 }
 
-.box_img_container:hover .overlay{
+.box_img_top:hover .overlay{
   opacity: 1;
   transition: 0.5s;
 }
 
-.box_img_container:hover .overlay i{
+.box_img_top:hover .overlay i{
   display: block;
 }
 /* /layover */
