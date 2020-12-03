@@ -284,6 +284,12 @@ main{
   margin-top: 30px;
 }
 
+#main_content h4{
+  color: #585b61;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
 #main_content .box_img_container{
   width: 100%;
   display: flex;
@@ -313,6 +319,26 @@ main{
   text-align: center;
 }
 /* /first row */
+
+/* third row */
+#main_content .box_img_round{
+  width: calc(100% / 6);
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+#main_content .box_img_round img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+#main_content .box_img_round h3{
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+/* third row */
 /* /central content */
 /* /main */
 
