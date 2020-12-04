@@ -265,6 +265,7 @@ main{
   padding: 10px 40px;
   font-size: 13px;
   font-weight: bold;
+  display: inline-block;
 }
 
 .call_to_action .cta_btn:hover a.btn{
