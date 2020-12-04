@@ -251,7 +251,6 @@ main{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  text-align: right;
 }
 
 .cta_btn{
