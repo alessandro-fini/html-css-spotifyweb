@@ -269,7 +269,7 @@ main{
 }
 
 .call_to_action .cta_btn:hover a.btn{
-  transform: scale(1);
+  transform: scale(1.1);
 }
 /* /button */
 
