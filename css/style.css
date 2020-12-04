@@ -116,8 +116,12 @@ main{
 /* /logo >>> playlist */
 
 /* list */
-#playlist .playlist_item{
+#playlist .item_list ul{
   min-height: 180px;
+}
+
+#playlist .playlist_item{
+  /* min-height: 125px; */
   flex-grow: 1;
   overflow: auto;
   margin-top: 20px;
